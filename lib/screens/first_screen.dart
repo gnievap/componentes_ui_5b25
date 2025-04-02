@@ -5,6 +5,18 @@ class FirstScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(child: Text('Primera ventana'));
+    return Scaffold(
+      appBar: AppBar(title: Text('Primer ventana')),
+      body: Center(
+        child: Column(
+          children: [
+            Text('Un husky blanco'),
+            Image.asset('assets/img/husky1.jpg', height: 300, width: 300),
+            Text('Otro husky'),
+            Image.asset('assets/img/husky2.jpg', height: 300, width: 300),
+          ],
+        ),
+      ),
+    );
   }
 }
